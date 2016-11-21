@@ -1,0 +1,44 @@
+
+iframe {
+    border: none;
+}
+
+.modal-demo {
+    background-color: #FFF;
+    width: 600px;
+    border: #000 solid 1px;
+    border-radius: 10px;
+    box-shadow: 0 8px 6px -6px black;
+    text-align: left;
+    display: none;
+}
+
+.modalbox {
+    position: relative;
+    padding: 20px 20px 20px 20px;
+    min-height: 300px;
+}
+
+.modal-demo  {
+    margin: 20px;
+    text-align: center;
+    width: auto;
+    left: auto;
+    right: auto;
+    
+}
+.btn_exit { /* close로 하면 버튼이 글씨만으로 바뀌는데 submit이랑 통일하려고 바꿈*/
+    margin: auto;
+}
+.keyword {
+    padding-left: 35%;
+    padding-right: 35%;
+    font-size:18px;
+}
+
+.btn_submit {
+    top: 15px;
+    right: 15px;
+    margin: auto;
+}
+
