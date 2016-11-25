@@ -1,11 +1,10 @@
-
 iframe {
     border: none;
 }
 
 .modal-demo {
     background-color: #FFF;
-    width: 600px;
+    max-width: 800px;
     border: #000 solid 1px;
     border-radius: 10px;
     box-shadow: 0 8px 6px -6px black;
@@ -19,26 +18,107 @@ iframe {
     min-height: 300px;
 }
 
+.modalbox .l {
+    float: left;
+    
+}
+
+.modalbox .r {
+    float: right;
+}
+
 .modal-demo  {
     margin: 20px;
     text-align: center;
     width: auto;
     left: auto;
     right: auto;
-    
 }
-.btn_exit { /* close로 하면 버튼이 글씨만으로 바뀌는데 submit이랑 통일하려고 바꿈*/
-    margin: auto;
+
+/* Start Title */
+.btn_exit {
+    background: white;
+    border: 0px white solid;
+    font-size: 14px;
+    margin-top: 2px;
+    margin-left: 5px;
 }
 .keyword {
-    padding-left: 35%;
-    padding-right: 35%;
-    font-size:18px;
+    font-size: 17px;
 }
-
 .btn_submit {
-    top: 15px;
-    right: 15px;
-    margin: auto;
+    background: white;
+    border: 0px white solid;
+    font-size: 14px;
+    margin-top: 2px;
+    margin-right: 5px;
+}
+/* End Title */
+
+/* Start Setting */
+.setting {
+    padding-bottom: 50px;
 }
 
+#font_family {
+    margin-top: 5px;
+}
+#font_size {
+    margin-top: 14px;
+}
+
+.sort-select {
+    display: inline-block;
+}
+
+.sort-select input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+.l-align{
+    background-image:url(../img/radio_left.png);
+}
+
+.c-align{
+    background-image:url(../img/radio_center.png);
+}
+
+.r-align{
+    background-image:url(../img/radio_right.png);
+}
+
+.sort-select input:active +.sort{opacity: .9;}
+.sort-select input:checked +.sort{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.sort{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:30px; height:28px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.6);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.6);
+            filter: brightness(1.8) grayscale(1) opacity(.6);
+}
+.sort:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.8);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.8);
+            filter: brightness(1.2) grayscale(.5) opacity(.8);
+}
+
+#publicOrPrivate {
+    color: #666666;
+    font-size: 13px;
+    font-weight: 300;
+    text-decoration: none;
+    font-family: '나눔명조', 'NanumMyeongjo', ng;
+}
+/* End Setting */
