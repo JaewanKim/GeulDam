@@ -85,6 +85,23 @@
 	}(document, 'script', 'facebook-jssdk'));</script>
 <!-- End Facebook Login Script -->
 
+<!-- Start DB Setting -->
+	<script>
+		//DB에서 받아오기 위해 변수값으로 설정
+		var changefontsize="10px";
+		var changealign="l-align";
+		var changefont="1";
+		
+		//id로 가져옴
+		var change = document.getElementById("changeTarget");
+		
+		// 정렬, 폰트, 폰트 사이즈, 바꿀때 이런식으로 그냥 변수 명으로 넣어놓으면 내가 디비로 바꿔 놓을게
+		change.style.fontStyle=changefont; // id="font_family" // value = 나눔명조 :1, 나눔고딕:2, 맑은고딕:3
+		change.style.fontSize=changefontsize; // id="font_size" // value = 10, 12, 14
+		change.style.textAlign=changealign; // id = value = l-align, c-align, r-align		
+	</script>
+<!-- End DB Setting -->
+
     <!-- Start header -Today's Word- -->
 	<header>
 		<div id="navigation">
@@ -156,18 +173,17 @@
                 <div class="setting">
                     <span class="l">
 <!--                        <span class="font-selects">-->
-                            <select id="font_family" name="sel_font">
+                            <select id="font_family" name="font_family">
                                 <option value="1">나눔명조</option>
                                 <option value="2">나눔고딕</option>
                                 <option value="3">맑은고딕</option>
                             </select>
-                            <select id ="font_size" name="sel_font_size">
+                            <select id ="font_size" name="font_size">
                                 <option value="10">10</option>
                                 <option value="12">12</option>
                                 <option value="14">14</option>
                             </select>
 <!--                        </span>-->
-                        &nbsp;&nbsp;&nbsp;
                         <span class="sort-select">
                             <input id="l-align" type="radio" name="sort" value="l-align" checked/>
                             <label class="sort l-align" for="l-align"></label>
