@@ -1,0 +1,62 @@
+/* Start Setting */
+.setting {
+    padding-bottom: 50px;
+}
+
+#font_family {
+    margin-top: 5px;
+    font-family: '나눔명조', 'NanumMyeongjo', ng;
+}
+
+#font_size {
+    margin-top: 14px;
+    font-family: '나눔명조', 'NanumMyeongjo', ng;
+}
+
+.sort-select {
+    display: inline-block;
+}
+
+.sort-select input{
+    margin:0; padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+.l-align{
+    background-image:url(../images/radio_left.png);
+}
+
+.c-align{
+    background-image:url(../images/radio_center.png);
+}
+
+.r-align{
+    background-image:url(../images/radio_right.png);
+}
+
+.sort-select input:active +.sort{opacity: .9;}
+.sort-select input:checked +.sort{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.sort{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:30px; height:28px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.6);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.6);
+            filter: brightness(1.8) grayscale(1) opacity(.6);
+}
+.sort:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.8);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.8);
+            filter: brightness(1.2) grayscale(.5) opacity(.8);
+}
+/* End Setting */
