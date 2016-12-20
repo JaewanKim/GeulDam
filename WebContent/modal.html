@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slide-Out Menu - TemplateMonster Demo</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+	<script src="./js/script.js"></script>
+	<link rel="stylesheet" href="./css/style.css">
+
+    <title>글담</title>
+    
+    <!-- Start Modal CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/writingModal.css">
+    <link rel="stylesheet" href="./css/custombox.min.css">
+    <!-- End Modal CSS -->
+    
+</head>
+<body>
+    
+	<header>
+		<div id="navigation">
+            
+            <div class="heading">계절</div>
+            <div class="text">오늘의 단어</div>
+        </div>
+   
+   
+	</header>
+    
+    <span class="toggle-button">
+        	<div class="menu-bar menu-bar-top"></div>
+        	<div class="menu-bar menu-bar-middle"></div>
+        	<div class="menu-bar menu-bar-bottom"></div>
+        </span>
+		<div class="menu-wrap">
+			<div class="menu-sidebar">
+                <div align = center>
+                    <h2>김재완</h2>
+                </div>
+				<ul class="menu" align="center">
+					<li><a href="#">오늘의 단어</a></li>
+					<li><a href="#">모두의 글</a></li>
+					<li class="menu-item-has-children"><a href="mywriting.html">나의 글</a>
+						<span class="sidebar-menu-arrow"></span>
+						<ul class="sub-menu">
+							<li><a href="#">이거</a></li>
+							<li><a href="#">필요</a></li>
+							<li><a href="#">없겠지?</a></li>
+						</ul>
+					</li>
+					<li><a href="#">담은 글</a></li>
+					<li><a href="#">설정</a></li>
+				</ul>			
+			</div>
+		</div>
+    
+	<div class="wrapper">
+		<section class="text" align=center>
+			<p>2016년 11월 6일,<br>오늘의 키워드</p>
+            <h1 class="heading">계절</h1>
+            <br><br><br><br>
+            <p>세상에는 멋진 생각들이 많고,<br>우리는 누구나 글을 쓸 수 있습니다.</p>
+            
+            <br><br><br>
+			<form>
+                <!--
+                <button type="button" name="button1">
+                    <img src="./img/button_write.png" align="absmiddle">
+                </button>
+                -->
+                <a class="writingModalPopup" href="#modal">
+                    <img src="./img/button_write.png" align="absmiddle">
+                </a>
+                
+                &nbsp;
+            </form>
+		</section>
+	</div>
+    
+<!-- Modal -->
+<div id="modal" class="modal-demo">
+    <div class="modalbox">
+        <form>
+            <button type="button" class="btn_exit" onclick="Custombox.close();">닫기</button>
+            <span class="keyword">키워드</span>
+            <button type="submit" class="btn_submit" onclick="Custombox.submit();">완료</button> <!-- submit() 함수 만들어야함. alert --> 
+            <hr/>
+            <select name="sel_font">
+                <option value="">폰트</option>
+                <option value="1">폰트1</option>
+                <option value="2">폰트2</option>
+                <option value="3">폰트3</option>
+            </select>
+            &nbsp;&nbsp;&nbsp;
+            <select name="sel_font_size">
+                <option value="">폰트 크기</option>
+                <option value="10">10</option>
+                <option value="12">12</option>
+                <option value="14">14</option>
+            </select>
+            &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="sort" id="left_align"/>
+            <label for="left_align"><img src=""/></label>
+            <input type="radio" name="sort" id="center_align"/>
+            <label for="center_align"><img src=""/></label>   <input type="radio" name="sort" id="right_align"/>
+            <label for="right_align"><img src=""/></label>
+            글 정렬
+            <hr/>
+            <textarea class="js-textarea-minrows form-control" placeholder="당신의 생각을 들려주세요.." rows="10"></textarea>
+        </form>
+    </div>
+</div>
+	  
+        <div class="list">
+		<section class="text" align=center>
+			<p>2016년 11월 6일,<br>오늘의 키워드</p>
+            <h1 class="heading">나의 글</h1>
+            <br><br><br><br>
+            <p>세상에는 멋진 생각들이 많고,<br>우리는 누구나 글을 쓸 수 있습니다.</p>
+            
+			<p class="buttons">
+			</p>
+		</section>
+	</div>
+    
+<!-- External JavaScript -->
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<!-- Start Auto-Grow-Of-TextArea JavaScript -->
+<script src="//code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+<script src="./js/jquery.autoresize.min.js"></script>
+<!-- End Auto-Grow-Of-TextArea JavaScript -->    
+
+<!-- Start Modal JavaScript -->
+<script src="./js/custombox.min.js"></script>
+<script src="./js/legacy.min.js"></script>
+<script src="./js/writingModal.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!-- End Modal JavaScript -->    
+    
+</body>
+</html>

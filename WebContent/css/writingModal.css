@@ -1,3 +1,63 @@
+<<<<<<< HEAD
+=======
+iframe {
+    border: none;
+}
+
+.modal-demo {
+    background-color: #FFF;
+    max-width: 800px;
+    border: #000 solid 1px;
+    border-radius: 10px;
+    box-shadow: 0 8px 6px -6px black;
+    text-align: left;
+    display: none;
+}
+
+.modalbox {
+    position: relative;
+    padding: 20px 20px 20px 20px;
+    min-height: 300px;
+}
+
+.modalbox .l {
+    float: left;
+    
+}
+
+.modalbox .r {
+    float: right;
+}
+
+.modal-demo  {
+    margin: 20px;
+    text-align: center;
+    width: auto;
+    left: auto;
+    right: auto;
+}
+
+/* Start Title */
+.btn_exit {
+    background: white;
+    border: 0px white solid;
+    font-size: 14px;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+.keyword {
+    font-size: 17px;
+}
+.btn_submit {
+    background: white;
+    border: 0px white solid;
+    font-size: 14px;
+    margin-top: 2px;
+    margin-right: 5px;
+}
+/* End Title */
+
+>>>>>>> origin/master
 /* Start Setting */
 .setting {
     padding-bottom: 50px;
@@ -5,12 +65,18 @@
 
 #font_family {
     margin-top: 5px;
+<<<<<<< HEAD
     font-family: '나눔명조', 'NanumMyeongjo', ng;
 }
 
 #font_size {
     margin-top: 14px;
     font-family: '나눔명조', 'NanumMyeongjo', ng;
+=======
+}
+#font_size {
+    margin-top: 14px;
+>>>>>>> origin/master
 }
 
 .sort-select {
@@ -18,12 +84,17 @@
 }
 
 .sort-select input{
+<<<<<<< HEAD
     margin:0; padding:0;
+=======
+    margin:0;padding:0;
+>>>>>>> origin/master
     -webkit-appearance:none;
        -moz-appearance:none;
             appearance:none;
 }
 .l-align{
+<<<<<<< HEAD
     background-image:url(../images/radio_left.png);
 }
 
@@ -33,6 +104,17 @@
 
 .r-align{
     background-image:url(../images/radio_right.png);
+=======
+    background-image:url(../img/radio_left.png);
+}
+
+.c-align{
+    background-image:url(../img/radio_center.png);
+}
+
+.r-align{
+    background-image:url(../img/radio_right.png);
+>>>>>>> origin/master
 }
 
 .sort-select input:active +.sort{opacity: .9;}
@@ -59,4 +141,15 @@
        -moz-filter: brightness(1.2) grayscale(.5) opacity(.8);
             filter: brightness(1.2) grayscale(.5) opacity(.8);
 }
+<<<<<<< HEAD
+=======
+
+#publicOrPrivate {
+    color: #666666;
+    font-size: 13px;
+    font-weight: 300;
+    text-decoration: none;
+    font-family: '나눔명조', 'NanumMyeongjo', ng;
+}
+>>>>>>> origin/master
 /* End Setting */
